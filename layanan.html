@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matcha House - Layanan</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #f4f9f4; margin: 0; padding: 0; }
+    .header { background-color: #4CAF50; color: #fff; padding: 30px; text-align: center; }
+    .nav { background-color: #81C784; padding: 12px; text-align: center; }
+    .nav ul { list-style: none; margin: 0; padding: 0; }
+    .nav li { display: inline-block; margin: 0 20px; }
+    .nav a { color: #fff; text-decoration: none; font-weight: bold; font-size: 18px; }
+    .nav a:hover { color: #333; }
+    .content { padding: 30px; text-align: center; }
+    form { background: #fff; padding: 25px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); max-width: 600px; margin: auto; text-align: left; }
+    label { font-weight: bold; margin-top: 10px; display: block; }
+    input, textarea, select { width: 100%; padding: 12px; margin: 8px 0; border: 1px solid #ccc; border-radius: 8px; }
+    button { background-color: #4CAF50; color: #fff; border: none; padding: 12px 20px; border-radius: 8px; cursor: pointer; font-size: 16px; }
+    button:hover { background-color: #388e3c; }
+    .footer { background-color: #4CAF50; color: #fff; padding: 15px; text-align: center; margin-top: 30px; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>🍵 Matcha House</h1>
+  </div>
+
+  <div class="nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="layanan.html">Layanan</a></li>
+      <li><a href="kontak.html">Kontak</a></li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h2>Form Pemesanan Matcha</h2>
+    <form action="" method="POST">
+      <label for="nama_pembeli">Nama Pemesan:</label>
+      <input type="text" id="nama_pembeli" name="nama_pembeli" required>
+
+      <label for="jenis_matcha">Jenis Matcha:</label>
+      <select id="jenis_matcha" name="jenis_matcha" required>
+        <option value="" disabled selected>Pilih Jenis Matcha</option>
+        <option value="Matcha Latte">Matcha Latte</option>
+        <option value="Iced Matcha">Cookies Matcha</option>
+        <option value="Matcha Frappe">Powder Matcha</option>
+        <option value="Matcha Cheesecake">Matcha Cheesecake</option>
+      </select>
+
+      <label for="jumlah">Jumlah Pesanan:</label>
+      <input type="number" id="jumlah" name="jumlah" required>
+
+      <label for="alamat">Alamat:</label>
+      <textarea id="alamat" name="alamat" required></textarea>
+
+      <label for="no_telepon">No Telepon:</label>
+      <input type="number" id="no_telepon" name="no_telepon" required>
+
+      <label for="metode_pembayaran">Metode Pembayaran:</label>
+      <select id="metode_pembayaran" name="metode_pembayaran" required>
+        <option value="" disabled selected>Pilih Metode Pembayaran</option>
+        <option value="Dana">Dana</option>
+        <option value="Transfer Bank">Transfer Bank</option>
+        <option value="COD">Bayar di Tempat</option>
+      </select>
+
+      <button type="submit">Pesan Sekarang</button>
+    </form>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2023 Matcha Delight All Rights Reserved.</p>
+  </div>
+</body>
+</html>
